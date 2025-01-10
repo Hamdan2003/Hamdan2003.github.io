@@ -29,7 +29,7 @@ body {
 }
 
 .cta-button {
-    background: #E94560;
+    background: #ff0061;
     color: white;
     text-decoration: none;
     padding: 12px 24px;
@@ -94,7 +94,7 @@ section {
 /* Contact Section */
 
 .contact-section {
-    background-color: #E94560;
+    background-color: #ff0061;
 }
 
 .contact-section form {
@@ -123,7 +123,7 @@ section {
 
 .contact-section button {
     width: 100%;
-    background: #E94560;
+    background: #ff0061;
     color: white;
     border: none;
     padding: 12px;
@@ -216,7 +216,7 @@ section {
 }
 
 .navbar a:hover {
-    color: #E94560; /* Highlight on hover */
+    color: #ff0061; /* Highlight on hover */
 }
 
 /* Home Icon */
@@ -279,7 +279,7 @@ section {
 }
 
 .subject-box:hover {
-    background-color: #E94560;
+    background-color: #ff0061;
     transform: translateY(-5px);
 }
 
@@ -320,7 +320,7 @@ section {
 }
 
 .subject-box:hover {
-    background-color: #E94560;
+    background-color: #ff0061;
     transform: translateY(-5px);
 }
 
@@ -392,7 +392,7 @@ section {
     margin: 20px 0;
     padding: 10px 20px;
     background-color: #1d2358;
-    border-left: 5px solid #E94560;
+    border-left: 5px solid #ff0061;
     border-radius: 5px;
 }
 
@@ -400,7 +400,7 @@ section {
     display: block;
     margin-top: 10px;
     font-size: 1em;
-    color: #E94560;
+    color: #ff0061;
 }
 
 .graphs {
@@ -448,7 +448,7 @@ section {
 }
 
 .navbar a:not(.home-icon) {
-    background-color: #E94560; /* Set the background color for all links except the home icon */
+    background-color: #ff0061; /* Set the background color for all links except the home icon */
     border-radius: 25px; /* Make the buttons rounded */
 }
 
