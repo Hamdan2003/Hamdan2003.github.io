@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html" class="home-icon">
+                <img src="home-icon.png" alt="Home" class="icon">
+            </a>
+            <ul>
+                <li><a href="tutors.html">Our Tutors</a></li>
+                <li><a href="subjects.html">Subjects Offered</a></li>
+                <li><a href="impact.html">Our Impact</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="impact-section">
+        <h1>Our Impact</h1>
+        <div class="statistics">
+            <div class="stat-box">
+                <h2>568+</h2>
+                <p>Students Helped, & Counting</p>
+            </div>
+            <div class="stat-box">
+                <h2>97%</h2>
+                <p>Students Who Said We Made a Difference</p>
+            </div>
+            <div class="stat-box">
+                <h2>4.86/5⭐️</h2>
+                <p>Average Rating</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <h2>Check out a few of the latest reviews from students and parents!</h2>
+            <blockquote>"Khanquer Tutors helped me improve my math grades from a C to an A in just two months!"</blockquote>
+            <cite>– Grateful Student</cite>
+            <blockquote>"The tutors are very professional and dedicated. My child’s confidence has soared!"</blockquote>
+            <cite>– Happy Parent</cite>
+            <blockquote>"I couldn’t have done it without Khanquer Tutors. They made learning fun and easy."</blockquote>
+            <cite>– Successful Student</cite>
+        </div>
+        <div class="graphs">
+            <h2>Average Grade Improvement Over Time</h2>
+            <canvas id="gradeImprovementChart"></canvas>
+            <h2>Percentage of Students Per Subject</h2>
+            <canvas id="otherStatsChart"></canvas>
+        </div>
+    </section>
+    <script>
+        const gradeImprovementCtx = document.getElementById('gradeImprovementChart').getContext('2d');
+        const gradeImprovementChart = new Chart(gradeImprovementCtx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                /*datasets: [{
+                    label: 'Grade Improvement',
+                    data: [56, 68, 77, 85, 91, 92],
+                    backgroundColor: 'rgba(233, 69, 96, 0.2)',
+                    borderColor: 'rgba(233, 69, 96, 1)',
+                    borderWidth: 1
+                }]
+            }, */
+                datasets: [
+                    {
+                        label: 'Grade Improvement - Group A',
+                        data: [56, 68, 77, 85, 91, 92],
+                        backgroundColor: 'rgba(233, 69, 96, 0.2)',
+                        borderColor: 'rgba(233, 69, 96, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Grade Improvement - Group B',
+                        data: [32, 47, 63, 71, 81, 89],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Grade Improvement - Group C',
+                        data: [70, 76, 83, 84, 91, 96],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const otherStatsCtx = document.getElementById('otherStatsChart').getContext('2d');
+        const otherStatsChart = new Chart(otherStatsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Math', 'Physics', 'Chemistry', 'English', 'Test Prep'],
+                datasets: [{
+                    label: 'Percentage of Students',
+                    data: [75, 40, 20, 10, 15],
+                    backgroundColor: [
+                        'rgba(233, 69, 96, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(233, 69, 96, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
